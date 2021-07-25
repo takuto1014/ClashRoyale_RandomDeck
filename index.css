@@ -2,12 +2,13 @@
     padding: 2px;
   }
   
-
   #btn1 {
     margin-bottom: 4px;
   }
 h1{
   color: aqua;
+  padding: 20px;
+  background-color: chocolate;
 }
 body{
   background-color: beige;
