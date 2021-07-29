@@ -1,5 +1,6 @@
+//環境最先端デッキ            
             //カード全部
-            card_main = []
+        card_main = []
         card_sky = []
         card_tank = []
         card_area = []
@@ -14,39 +15,39 @@
         }
 
         //アーチャー
-        var number_26000001 = 1 //ここに比率を入力
+        var number_26000001 = 5 //ここに比率を入力
         for(i=0;i<number_26000001;i++){
             card_sky.push(26000001)
         }
         
         //ゴブリン
-        var number_26000002 = 1 //ここに比率を入力
+        var number_26000002 = 2 //ここに比率を入力
         for(i=0;i<number_26000002;i++){
             card_tank.push(26000002)
         }
 
         //ジャイアント
-        var number_26000003 = 1 //ここに比率を入力
+        var number_26000003 = 5 //ここに比率を入力
         for(i=0;i<number_26000003;i++){
             card_main.push(26000003)
         }
 
         //ペッカ
-        var number_26000004 = 1 //ここに比率を入力
+        var number_26000004 = 4 //ここに比率を入力
         for(i=0;i<number_26000004;i++){
             card_main.push(26000004)
         }
 
         //ガーゴイル
-        var number_26000005 = 1 //ここに比率を入力
+        var number_26000005 = 8 //ここに比率を入力
         for(i=0;i<number_26000005;i++){
             card_sky.push(26000005)
         }
 
         //エアバルーン
-        var number_26000006 = 1 //ここに比率を入力
+        var number_26000006 = 5 //ここに比率を入力
         for(i=0;i<number_26000006;i++){
-            card_sky.push(26000006)
+            card_main.push(26000006)
         }
 
         //ネクロマンサー
@@ -56,55 +57,55 @@
         }
 
         //バーバリアン
-        var number_26000008 = 1 //ここに比率を入力
+        var number_26000008 = 4 //ここに比率を入力
         for(i=0;i<number_26000008;i++){
             card_area.push(26000008)
         }
 
         //ゴーレム
-        var number_26000009 = 99 //ここに比率を入力
+        var number_26000009 = 7 //ここに比率を入力
         for(i=0;i<number_26000009;i++){
             card_main.push(26000009)
         }
 
         //スケルトン
-        var number_26000010 = 1 //ここに比率を入力
+        var number_26000010 = 6 //ここに比率を入力
         for(i=0;i<number_26000010;i++){
             card_tank.push(26000010)
         }
 
         //バルキリー
-        var number_26000011 = 1 //ここに比率を入力
+        var number_26000011 = 3 //ここに比率を入力
         for(i=0;i<number_26000011;i++){
             card_area.push(26000011)
         }
 
         //スケルトン部隊
-        var number_26000012 = 1 //ここに比率を入力
+        var number_26000012 = 2 //ここに比率を入力
         for(i=0;i<number_26000012;i++){
             card_area.push(26000012)
         }
 
         //ボンバー
-        var number_26000013 = 1 //ここに比率を入力
+        var number_26000013 = 6 //ここに比率を入力
         for(i=0;i<number_26000013;i++){
             card_area.push(26000013)
         }
 
         //マスケット銃士
-        var number_26000014 = 1 //ここに比率を入力
+        var number_26000014 = 5 //ここに比率を入力
         for(i=0;i<number_26000014;i++){
             card_sky.push(26000014)
         }
 
         //ベビードラゴン
-        var number_26000015 = 1 //ここに比率を入力
+        var number_26000015 = 8 //ここに比率を入力
         for(i=0;i<number_26000015;i++){
             card_sky.push(26000015)
         }
 
         //プリンス
-        var number_26000016 = 1 //ここに比率を入力
+        var number_26000016 = 3 //ここに比率を入力
         for(i=0;i<number_26000016;i++){
             card_tank.push(26000016)
         }
@@ -116,13 +117,13 @@
         }
 
         //ミニペ
-        var number_26000018 = 1 //ここに比率を入力
+        var number_26000018 = 3 //ここに比率を入力
         for(i=0;i<number_26000018;i++){
             card_tank.push(26000018)
         }
 
         //槍ゴブリン
-        var number_26000019 = 1 //ここに比率を入力
+        var number_26000019 = 10 //ここに比率を入力
         for(i=0;i<number_26000019;i++){
             card_sky.push(26000019)
         }
@@ -134,25 +135,25 @@
         }
 
         //ホグライダー
-        var number_26000021 = 1 //ここに比率を入力
+        var number_26000021 = 3 //ここに比率を入力
         for(i=0;i<number_26000021;i++){
             card_main.push(26000021)
         }
 
         //ガーゴイルの群れ
-        var number_26000022 = 1 //ここに比率を入力
+        var number_26000022 = 4 //ここに比率を入力
         for(i=0;i<number_26000022;i++){
             card_sky.push(26000022)
         }
 
         //アイスウィザード
-        var number_26000023 = 1 //ここに比率を入力
+        var number_26000023 = 3 //ここに比率を入力
         for(i=0;i<number_26000023;i++){
             card_sky.push(26000023)
         }
 
         //ロイヤルジャイアント
-        var number_26000024 = 1 //ここに比率を入力
+        var number_26000024 = 8 //ここに比率を入力
         for(i=0;i<number_26000024;i++){
             card_main.push(26000024)
         }
@@ -164,91 +165,91 @@
         }
 
         //プリンセス
-        var number_26000026 = 1 //ここに比率を入力
+        var number_26000026 = 2 //ここに比率を入力
         for(i=0;i<number_26000026;i++){
             card_sky.push(26000026)
         }
 
         //ダークプリンス
-        var number_26000027 = 1 //ここに比率を入力
+        var number_26000027 = 8 //ここに比率を入力
         for(i=0;i<number_26000027;i++){
             card_area.push(26000027)
         }
 
         //三銃士
-        var number_26000028 = 1 //ここに比率を入力
+        var number_26000028 = 7 //ここに比率を入力
         for(i=0;i<number_26000028;i++){
             card_main.push(26000028)
         }
 
         //ラヴァハウンド
-        var number_26000029 = 1 //ここに比率を入力
+        var number_26000029 = 10 //ここに比率を入力
         for(i=0;i<number_26000029;i++){
-            card_sky.push(26000029)
+            card_main.push(26000029)
         }
 
         //アイススピリット
-        var number_26000030 = 1 //ここに比率を入力
+        var number_26000030 = 6 //ここに比率を入力
         for(i=0;i<number_26000030;i++){
             card_tank.push(26000030)
         }
 
         //ファイアスピリット
-        var number_26000031 = 1 //ここに比率を入力
+        var number_26000031 = 6 //ここに比率を入力
         for(i=0;i<number_26000031;i++){
             card_tank.push(26000031)
         }
 
         //ディガー
-        var number_26000032 = 1 //ここに比率を入力
+        var number_26000032 = 8 //ここに比率を入力
         for(i=0;i<number_26000032;i++){
             card_tank.push(26000032)
         }
 
         //スパーキー
-        var number_26000033 = 1 //ここに比率を入力
+        var number_26000033 = 5 //ここに比率を入力
         for(i=0;i<number_26000033;i++){
             card_tank.push(26000033)
         }
 
         //ボウラー
-        var number_26000034 = 1 //ここに比率を入力
+        var number_26000034 = 3 //ここに比率を入力
         for(i=0;i<number_26000034;i++){
             card_area.push(26000034)
         }
 
         //ランバージャック
-        var number_26000035 = 1 //ここに比率を入力
+        var number_26000035 = 4 //ここに比率を入力
         for(i=0;i<number_26000035;i++){
             card_tank.push(26000035)
         }
 
         //攻城バーバリアン
-        var number_26000036 = 1 //ここに比率を入力
+        var number_26000036 = 4 //ここに比率を入力
         for(i=0;i<number_26000036;i++){
             card_main.push(26000036)
         }
 
         //インフェルノドラゴン
-        var number_26000037 = 1 //ここに比率を入力
+        var number_26000037 = 9 //ここに比率を入力
         for(i=0;i<number_26000037;i++){
             card_sky.push(26000037)
         }
 
         //アイスゴーレム
-        var number_26000038 = 1 //ここに比率を入力
+        var number_26000038 = 2 //ここに比率を入力
         for(i=0;i<number_26000038;i++){
             card_tank.push(26000038)
         }
 
         //メガガーゴイル
-        var number_26000039 = 1 //ここに比率を入力
+        var number_26000039 = 11 //ここに比率を入力
         for(i=0;i<number_26000039;i++){
             card_sky.push(26000039)
         }
 
         //吹き矢ゴブリン
-        var number_26000040 = 1 //ここに比率を入力
+        var number_26000040 = 5 //ここに比率を入力
         for(i=0;i<number_26000040;i++){
             card_sky.push(26000040)
         }
@@ -260,139 +261,139 @@
         }
 
         //エレクトロウィザード
-        var number_26000042 = 1 //ここに比率を入力
+        var number_26000042 = 9 //ここに比率を入力
         for(i=0;i<number_26000042;i++){
             card_sky.push(26000042)
         }
 
         //エリートバーバリアン
-        var number_26000043 = 1 //ここに比率を入力
+        var number_26000043 = 4 //ここに比率を入力
         for(i=0;i<number_26000043;i++){
             card_tank.push(26000043)
         }
 
         //ハンター
-        var number_26000044 = 1 //ここに比率を入力
+        var number_26000044 = 6 //ここに比率を入力
         for(i=0;i<number_26000044;i++){
             card_sky.push(26000044)
         }
 
         //執行人ファルチェ
-        var number_26000045 = 1 //ここに比率を入力
+        var number_26000045 = 4 //ここに比率を入力
         for(i=0;i<number_26000045;i++){
             card_sky.push(26000045)
         }
 
         //ユーノ
-        var number_26000046 = 1 //ここに比率を入力
+        var number_26000046 = 5 //ここに比率を入力
         for(i=0;i<number_26000046;i++){
             card_tank.push(26000046)
         }
 
         //見習い親衛隊
-        var number_26000047 = 1 //ここに比率を入力
+        var number_26000047 = 3 //ここに比率を入力
         for(i=0;i<number_26000047;i++){
-            card_area.push(26000047)
+            card_tank.push(26000047)
         }
 
         //ダークネクロ
-        var number_26000048 = 1 //ここに比率を入力
+        var number_26000048 = 8 //ここに比率を入力
         for(i=0;i<number_26000048;i++){
             card_tank.push(26000048)
         }
 
         //コウモリの群れ
-        var number_26000049 = 1 //ここに比率を入力
+        var number_26000049 = 7 //ここに比率を入力
         for(i=0;i<number_26000049;i++){
             card_sky.push(26000049)
         }
 
         //ロイヤルゴースト
-        var number_26000050 = 1 //ここに比率を入力
+        var number_26000050 = 4 //ここに比率を入力
         for(i=0;i<number_26000050;i++){
             card_area.push(26000050)
         }
 
         //ラムライダー
-        var number_26000051 = 1 //ここに比率を入力
+        var number_26000051 = 6 //ここに比率を入力
         for(i=0;i<number_26000051;i++){
             card_main.push(26000051)
         }
 
         //ザッピー
-        var number_26000052 = 1 //ここに比率を入力
+        var number_26000052 = 11 //ここに比率を入力
         for(i=0;i<number_26000052;i++){
             card_sky.push(26000052)
         }
 
         //アウトロー
-        var number_26000053 = 1 //ここに比率を入力
+        var number_26000053 = 4 //ここに比率を入力
         for(i=0;i<number_26000053;i++){
             card_tank.push(26000053)
         }
 
         //60式ムート
-        var number_26000054 = 1 //ここに比率を入力
+        var number_26000054 = 5 //ここに比率を入力
         for(i=0;i<number_26000054;i++){
             card_tank.push(26000054)
         }
 
         //メガナイト
-        var number_26000055 = 1 //ここに比率を入力
+        var number_26000055 = 2 //ここに比率を入力
         for(i=0;i<number_26000055;i++){
             card_main.push(26000055)
         }
 
         //スケルトンバレル
-        var number_26000056 = 1 //ここに比率を入力
+        var number_26000056 = 3 //ここに比率を入力
         for(i=0;i<number_26000056;i++){
             card_main.push(26000056)
         }
 
         //ホバリング砲
-        var number_26000057 = 1 //ここに比率を入力
+        var number_26000057 = 10 //ここに比率を入力
         for(i=0;i<number_26000057;i++){
             card_sky.push(26000057)
         }
 
         //ウォールブレイカー
-        var number_26000058 = 1 //ここに比率を入力
+        var number_26000058 = 6 //ここに比率を入力
         for(i=0;i<number_26000058;i++){
             card_main.push(26000058)
         }
 
         //ロイヤルホグ
-        var number_26000059 = 1 //ここに比率を入力
+        var number_26000059 = 3 //ここに比率を入力
         for(i=0;i<number_26000059;i++){
             card_main.push(26000059)
         }
 
         //ゴブジャイアント
-        var number_26000060 = 1 //ここに比率を入力
+        var number_26000060 = 9 //ここに比率を入力
         for(i=0;i<number_26000060;i++){
             card_main.push(26000060)
         }
 
         //漁師トリトン
-        var number_26000061 = 1 //ここに比率を入力
+        var number_26000061 = 8 //ここに比率を入力
         for(i=0;i<number_26000061;i++){
             card_tank.push(26000061)
         }
 
         //マジックアーチャー
-        var number_26000062 = 1 //ここに比率を入力
+        var number_26000062 = 7 //ここに比率を入力
         for(i=0;i<number_26000062;i++){
             card_sky.push(26000062)
         }
 
         //ライトニングドラゴン
-        var number_26000063 = 1 //ここに比率を入力
+        var number_26000063 = 8 //ここに比率を入力
         for(i=0;i<number_26000063;i++){
             card_sky.push(26000063)
         }
 
         //ロケット砲士
-        var number_26000064 = 1 //ここに比率を入力
+        var number_26000064 = 6 //ここに比率を入力
         for(i=0;i<number_26000064;i++){
             card_sky.push(26000064)
         }
@@ -410,25 +411,25 @@
         }
 
         //スケルトンドラゴン
-        var number_26000080 = 1 //ここに比率を入力
+        var number_26000080 = 12 //ここに比率を入力
         for(i=0;i<number_26000080;i++){
             card_sky.push(26000080)
         }
 
         //マザーネクロマンサー
-        var number_26000083 = 1 //ここに比率を入力
+        var number_26000083 = 12 //ここに比率を入力
         for(i=0;i<number_26000083;i++){
             card_sky.push(26000083)
         }
 
         //エレクトロスピリット
-        var number_26000084 = 1 //ここに比率を入力
+        var number_26000084 = 6 //ここに比率を入力
         for(i=0;i<number_26000084;i++){
             card_tank.push(26000084)
         }
 
         //エレクトロジャイアント
-        var number_26000085 = 1 //ここに比率を入力
+        var number_26000085 = 4 //ここに比率を入力
         for(i=0;i<number_26000085;i++){
             card_main.push(26000085)
         }
@@ -440,49 +441,49 @@
         }
 
         //ゴブリンの小屋
-        var number_27000001 = 1 //ここに比率を入力
+        var number_27000001 = 5 //ここに比率を入力
         for(i=0;i<number_27000001;i++){
             card_facility.push(27000001)
         }
 
         //迫撃砲
-        var number_27000002 = 1 //ここに比率を入力
+        var number_27000002 = 8 //ここに比率を入力
         for(i=0;i<number_27000002;i++){
             card_main.push(27000002)
         }
 
         //インフェルノタワー
-        var number_27000003 = 1 //ここに比率を入力
+        var number_27000003 = 2 //ここに比率を入力
         for(i=0;i<number_27000003;i++){
             card_facility.push(27000003)
         }
 
         //ボムタワー
-        var number_27000004 = 1 //ここに比率を入力
+        var number_27000004 = 2 //ここに比率を入力
         for(i=0;i<number_27000004;i++){
             card_facility.push(27000004)
         }
 
         //バーバリアンの小屋
-        var number_27000005 = 1 //ここに比率を入力
+        var number_27000005 = 3 //ここに比率を入力
         for(i=0;i<number_27000005;i++){
             card_facility.push(27000005)
         }
 
         //テスラ
-        var number_27000006 = 1 //ここに比率を入力
+        var number_27000006 = 6 //ここに比率を入力
         for(i=0;i<number_27000006;i++){
             card_facility.push(27000006)
         }
 
         //エリクサーポンプ
-        var number_27000007 = 1 //ここに比率を入力
+        var number_27000007 = 2 //ここに比率を入力
         for(i=0;i<number_27000007;i++){
             card_facility.push(27000007)
         }
 
         //巨大クロスボウ
-        var number_27000008 = 1 //ここに比率を入力
+        var number_27000008 = 3 //ここに比率を入力
         for(i=0;i<number_27000008;i++){
             card_main.push(27000008)
         }
@@ -494,31 +495,31 @@
         }
 
         //オーブン
-        var number_27000010 = 1 //ここに比率を入力
+        var number_27000010 = 4 //ここに比率を入力
         for(i=0;i<number_27000010;i++){
             card_facility.push(27000010)
         }
 
         //ゴブリンの檻
-        var number_27000012 = 1 //ここに比率を入力
+        var number_27000012 = 8 //ここに比率を入力
         for(i=0;i<number_27000012;i++){
             card_facility.push(27000012)
         }
 
         //ゴブリンドリル
-        var number_27000013 = 1 //ここに比率を入力
+        var number_27000013 = 6 //ここに比率を入力
         for(i=0;i<number_27000013;i++){
             card_main.push(27000013)
         }
 
         //ファイアボール
-        var number_28000000 = 1 //ここに比率を入力
+        var number_28000000 = 8 //ここに比率を入力
         for(i=0;i<number_28000000;i++){
             card_spell_2.push(28000000)
         }
 
         //矢の雨
-        var number_28000001 = 1 //ここに比率を入力
+        var number_28000001 = 3 //ここに比率を入力
         for(i=0;i<number_28000001;i++){
             card_spell_1.push(28000001)
         }
@@ -530,19 +531,19 @@
         }
 
         //ロケット
-        var number_28000003 = 1 //ここに比率を入力
+        var number_28000003 = 2 //ここに比率を入力
         for(i=0;i<number_28000003;i++){
             card_spell_2.push(28000003)
         }
 
         //ゴブリンバレル
-        var number_28000004 = 1 //ここに比率を入力
+        var number_28000004 = 2 //ここに比率を入力
         for(i=0;i<number_28000004;i++){
             card_main.push(28000004)
         }
 
         //フリーズ
-        var number_28000005 = 1 //ここに比率を入力
+        var number_28000005 = 4 //ここに比率を入力
         for(i=0;i<number_28000005;i++){
             card_spell_2.push(28000005)
         }
@@ -554,73 +555,73 @@
         }
 
         //ライトニング
-        var number_28000007 = 1 //ここに比率を入力
+        var number_28000007 = 6 //ここに比率を入力
         for(i=0;i<number_28000007;i++){
             card_spell_2.push(28000007)
         }
 
         //ザップ
-        var number_28000008 = 1 //ここに比率を入力
+        var number_28000008 = 2 //ここに比率を入力
         for(i=0;i<number_28000008;i++){
             card_spell_1.push(28000008)
         }
 
         //ポイズン
-        var number_28000009 = 1 //ここに比率を入力
+        var number_28000009 = 2 //ここに比率を入力
         for(i=0;i<number_28000009;i++){
             card_spell_2.push(28000009)
         }
 
         //スケルトンラッシュ
-        var number_28000010 = 1 //ここに比率を入力
+        var number_28000010 = 9 //ここに比率を入力
         for(i=0;i<number_28000010;i++){
             card_main.push(28000010)
         }
 
         //ローリングウッド
-        var number_28000011 = 1 //ここに比率を入力
+        var number_28000011 = 4 //ここに比率を入力
         for(i=0;i<number_28000011;i++){
             card_spell_1.push(28000011)
         }
 
         //トルネード
-        var number_28000012 = 1 //ここに比率を入力
+        var number_28000012 = 5 //ここに比率を入力
         for(i=0;i<number_28000012;i++){
             card_spell_1.push(28000012)
         }
 
         //クローン
-        var number_28000013 = 1 //ここに比率を入力
+        var number_28000013 = 2 //ここに比率を入力
         for(i=0;i<number_28000013;i++){
             card_spell_2.push(28000013)
         }
 
         //アースクエイク
-        var number_28000014 = 1 //ここに比率を入力
+        var number_28000014 = 4 //ここに比率を入力
         for(i=0;i<number_28000014;i++){
             card_spell_2.push(28000014)
         }
 
         //ローリングバーバリアン
-        var number_28000015 = 1 //ここに比率を入力
+        var number_28000015 = 8 //ここに比率を入力
         for(i=0;i<number_28000015;i++){
             card_spell_1.push(28000015)
         }
 
         //ヒールスピリット
-        var number_28000016 = 1 //ここに比率を入力
+        var number_28000016 = 6 //ここに比率を入力
         for(i=0;i<number_28000016;i++){
             card_tank.push(28000016)
         }
 
         //巨大雪玉
-        var number_28000017 = 1 //ここに比率を入力
+        var number_28000017 = 6 //ここに比率を入力
         for(i=0;i<number_28000017;i++){
             card_spell_1.push(28000017)
         }
 
         //ロイヤルデリバリー
-        var number_28000018 = 1 //ここに比率を入力
+        var number_28000018 = 4 //ここに比率を入力
         for(i=0;i<number_28000018;i++){
             card_spell_1.push(28000018)
         }
@@ -663,9 +664,9 @@
         card_6 = parseInt(Math.floor(Math.random()*number_facility))  //施設
         card_7 = parseInt(Math.floor(Math.random()*number_spell1))  //小型呪文
         card_8 = parseInt(Math.floor(Math.random()*number_spell2))  //大型呪文
-        console.log(card_4)
-        //deck_3="こちらが流行りのデッキです"
-        //document.write(deck_3.link("https://link.clashroyale.com/deck/en?deck="+card_main[card_1]+";"+card_sky[card_2]+";"+card_sky[card_3]+";"+card_tank[card_4]+";"+card_area[card_5]+";"+card_facility[card_6]+";"+card_spell_1[card_7]+";"+card_spell_2[card_8])  )
+        
+        deck_3="こちらが流行りのデッキです"
+        document.write(deck_3.link("https://link.clashroyale.com/deck/en?deck="+card_main[card_1]+";"+card_sky[card_2]+";"+card_sky[card_3]+";"+card_tank[card_4]+";"+card_area[card_5]+";"+card_facility[card_6]+";"+card_spell_1[card_7]+";"+card_spell_2[card_8])  )
 
 
         document.getElementById("link3").addEventListener("click", function () {
