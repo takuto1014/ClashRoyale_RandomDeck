@@ -8,6 +8,9 @@ html, body{
   background-image: url(background-img.jpg);
   
 }
+div#contens{
+  overflow: hidden;
+}
 /*ヘッダーの設定*/
 
 /*
@@ -29,7 +32,7 @@ div#footer-fixed
     bottom: 0px;                /* 位置(下0px) */
     left: 0px;                  /* 位置(左0px) */
     width: 100%;                /* 横幅100%　*/
-    height: 100px;              /* 縦幅140px */
+    height: 50px;              /* 縦幅140px */
 }
 
 
@@ -205,6 +208,3 @@ ul.over{
   opacity: 0.5;
 }
 
-.btn-check{
- background-color: violet;
-}
