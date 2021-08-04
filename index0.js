@@ -1,15 +1,14 @@
-
-document.getElementById("link_button").addEventListener("click", function () {
-    const textbox = document.getElementById("link")
-    const value = textbox.value
-    if(value.indexOf('https://link.clashroyale.com/deck/en?deck=2') != -1){
-        localStorage.setItem('key', value);
-        location.reload();
-    }else{
-        alert("入力したリンクが間違っています")
-    }
-    
-}, false);
+    document.getElementById("link_button").addEventListener("click", function () {
+        const textbox = document.getElementById("link")
+        const value = textbox.value
+        if(value.indexOf('https://link.clashroyale.com/deck/en?deck=2') != -1 || value.indexOf('https://link.clashroyale.com/deck/jp?deck=2') != -1){
+            localStorage.setItem('key', value);
+            location.reload();
+        }else{
+            alert("入力したリンクが間違っています")
+        }
+        
+    }, false);
 
 document.getElementById("link_button2").addEventListener("click", function () {
     var link = localStorage.getItem('key');
@@ -18,18 +17,19 @@ document.getElementById("link_button2").addEventListener("click", function () {
     
 }, false);
 
-var link = localStorage.getItem('key');
-var result = link.split(";")
-var result_0 = result[0].split("=")
-//alert(result_0[1] + result[1])
-var img_1 = result_0[1]+".png"
-var img_2 = result[1]+".png"
-var img_3 = result[2]+".png"
-var img_4 = result[3]+".png"
-var img_5 = result[4]+".png"
-var img_6 = result[5]+".png"
-var img_7 = result[6]+".png"
-var img_8 = result[7]+".png"
+    var link = localStorage.getItem('key');
+    var result = link.split(";")
+    var result_0 = result[0].split("=")
+    var result_8 = result[7].split("&")
+    //alert(result_0[1] + result[1])
+    var img_1 = "img/"+result_0[1]+".png"
+    var img_2 = "img/"+result[1]+".png"
+    var img_3 = "img/"+result[2]+".png"
+    var img_4 = "img/"+result[3]+".png"
+    var img_5 = "img/"+result[4]+".png"
+    var img_6 = "img/"+result[5]+".png"
+    var img_7 = "img/"+result[6]+".png"
+    var img_8 = "img/"+result_8[0]+".png"
 let img_01 = document.getElementById("image_place1");
 img_01.src = img_1;
 let img_02 = document.getElementById("image_place2");
