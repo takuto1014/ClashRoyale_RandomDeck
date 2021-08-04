@@ -4,185 +4,204 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width">
     <title>ClashRoyale Deck</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
     <link rel="stylesheet" href="index.css">
   </head>
   <body>
-    <nav class="navbar navbar-light bg-light">
-      <div class="container-fluid fixed-top ">
-        <a class="navbar-brand" href="#">
-          <img src="clashroyale_logo.jpg" alt="" width="64" height="32" class="d-inline-block align-top">
-          ClashRoyale Decks
-        </a>
+    <header>
+      <div id="header-fixed">
+        <div id="header-bk">
+          <div id="header"></div>
+        </div>
       </div>
-    </nav>
-    <h1>ランダムでデッキを生成します。</h1>
-    <a id="link"  class="btn-square">ランダムデッキ</a>
-    <!--<h1>いい感じのデッキを生成します。</h1>
-    <a id="link2"  class="btn-square">いい感じのデッキ</a>
-    
-    <h1>流行りのデッキ</h1>
-    <a id="link3"  class="btn-square">流行りのデッキ</a>
-    
-    <h1>メガナイトデッキ</h1>
-    <a id="link4"  class="btn-square">メガナイトデッキ</a>
-    -->
-    <h1>トリプルドラフト風デッキ</h1>
-    <a id="link5"  class="btn-square">トリプルドラフト風デッキ</a>
-    
-    <h1>1コス5枚デッキ</h1>
-    <a id="link6"  class="btn-square">1コス5枚デッキ</a>
+    </header>
+    <div id="body-bk">
+      <div id="body">
 
-    <h1>指定された平均エリクサー内でデッキを生成します</h1>
-    <a>エリクサーの下限を設定してください</a>
-    <select name="sources" id="elixir_range" class="custom-select sources" placeholder="Source Type">
-      <option value=1.4 selected>1.4</option> 
-      <option value=1.5>1.5</option> 
-      <option value=1.6>1.6</option> 
-      <option value=1.7>1.7</option> 
-      <option value=1.8>1.8</option> 
-      <option value=1.9>1.9</option> 
-      <option value=2.0>2.0</option> 
-      <option value=2.1>2.1</option> 
-      <option value=2.2>2.2</option> 
-      <option value=2.3>2.3</option> 
-      <option value=2.4>2.4</option> 
-      <option value=2.5>2.5</option> 
-      <option value=2.6>2.6</option> 
-      <option value=2.7>2.7</option> 
-      <option value=2.8>2.8</option> 
-      <option value=2.9>2.9</option> 
-      <option value=3.0>3.0</option> 
-      <option value=3.1>3.1</option> 
-      <option value=3.2>3.2</option> 
-      <option value=3.3>3.3</option> 
-      <option value=3.4>3.4</option> 
-      <option value=3.5>3.5</option> 
-      <option value=3.6>3.6</option> 
-      <option value=3.7>3.7</option> 
-      <option value=3.8>3.8</option> 
-      <option value=3.9>3.9</option> 
-      <option value=4.0>4.0</option> 
-      <option value=4.1>4.1</option> 
-      <option value=4.2>4.2</option> 
-      <option value=4.3>4.3</option> 
-      <option value=4.4>4.4</option> 
-      <option value=4.5>4.5</option> 
-      <option value=4.6>4.6</option> 
-      <option value=4.7>4.7</option> 
-      <option value=4.8>4.8</option> 
-      <option value=4.9>4.9</option> 
-      <option value=5.0>5.0</option> 
-      <option value=5.1>5.1</option> 
-      <option value=5.2>5.2</option> 
-      <option value=5.3>5.3</option> 
-      <option value=5.4>5.4</option> 
-      <option value=5.5>5.5</option> 
-      <option value=5.6>5.6</option> 
-      <option value=5.7>5.7</option> 
-      <option value=5.8>5.8</option> 
-      <option value=5.9>5.9</option> 
-      <option value=6.0>6.0</option> 
-      <option value=6.1>6.1</option> 
-      <option value=6.2>6.2</option> 
-      <option value=6.3>6.3</option> 
-      <option value=6.4>6.4</option> 
-      <option value=6.5>6.5</option> 
-      <option value=6.6>6.6</option> 
-      <option value=6.7>6.7</option> 
-      <option value=6.8>6.8</option> 
-      <option value=6.9>6.9</option> 
-      <option value=7.0>7.0</option> 
-      <option value=7.1>7.1</option> 
-      <option value=7.2>7.2</option> 
-      <option value=7.3>7.3</option> 
-      <option value=7.4>7.4</option> 
-      <option value=7.5>7.5</option> 
-    </select><br>
-    <a>エリクサーの上限を設定してください</a>
-    <select name="sources" id="elixir_range2" class="custom-select sources" placeholder="Source Type">
-      <option value=1.4>1.4</option> 
-      <option value=1.5>1.5</option> 
-      <option value=1.6>1.6</option> 
-      <option value=1.7>1.7</option> 
-      <option value=1.8>1.8</option> 
-      <option value=1.9>1.9</option> 
-      <option value=2.0>2.0</option> 
-      <option value=2.1>2.1</option> 
-      <option value=2.2>2.2</option> 
-      <option value=2.3>2.3</option> 
-      <option value=2.4>2.4</option> 
-      <option value=2.5>2.5</option> 
-      <option value=2.6>2.6</option> 
-      <option value=2.7>2.7</option> 
-      <option value=2.8>2.8</option> 
-      <option value=2.9>2.9</option> 
-      <option value=3.0>3.0</option> 
-      <option value=3.1>3.1</option> 
-      <option value=3.2>3.2</option> 
-      <option value=3.3>3.3</option> 
-      <option value=3.4>3.4</option> 
-      <option value=3.5>3.5</option> 
-      <option value=3.6>3.6</option> 
-      <option value=3.7>3.7</option> 
-      <option value=3.8>3.8</option> 
-      <option value=3.9>3.9</option> 
-      <option value=4.0>4.0</option> 
-      <option value=4.1>4.1</option> 
-      <option value=4.2>4.2</option> 
-      <option value=4.3>4.3</option> 
-      <option value=4.4>4.4</option> 
-      <option value=4.5>4.5</option> 
-      <option value=4.6>4.6</option> 
-      <option value=4.7>4.7</option> 
-      <option value=4.8>4.8</option> 
-      <option value=4.9>4.9</option> 
-      <option value=5.0>5.0</option> 
-      <option value=5.1>5.1</option> 
-      <option value=5.2>5.2</option> 
-      <option value=5.3>5.3</option> 
-      <option value=5.4>5.4</option> 
-      <option value=5.5>5.5</option> 
-      <option value=5.6>5.6</option> 
-      <option value=5.7>5.7</option> 
-      <option value=5.8>5.8</option> 
-      <option value=5.9>5.9</option> 
-      <option value=6.0>6.0</option> 
-      <option value=6.1>6.1</option> 
-      <option value=6.2>6.2</option> 
-      <option value=6.3>6.3</option> 
-      <option value=6.4>6.4</option> 
-      <option value=6.5>6.5</option> 
-      <option value=6.6>6.6</option> 
-      <option value=6.7>6.7</option> 
-      <option value=6.8>6.8</option> 
-      <option value=6.9>6.9</option> 
-      <option value=7.0>7.0</option> 
-      <option value=7.1>7.1</option> 
-      <option value=7.2>7.2</option> 
-      <option value=7.3>7.3</option> 
-      <option value=7.4>7.4</option> 
-      <option value=7.5 selected>7.5</option> 
-    </select><br>
-    <a id="link7"  class="btn-square">デッキはこちら</a> 
+      <h1>ランダムでデッキを生成します。</h1>
+      <a id="link"  class="btn-square">ランダムデッキ</a>
+      <!--<h1>いい感じのデッキを生成します。</h1>
+      <a id="link2"  class="btn-square">いい感じのデッキ</a>
+      
+      <h1>流行りのデッキ</h1>
+      <a id="link3"  class="btn-square">流行りのデッキ</a>
+      
+      <h1>メガナイトデッキ</h1>
+      <a id="link4"  class="btn-square">メガナイトデッキ</a>
+      -->
+      <h1>トリプルドラフト風デッキ</h1>
+      <a id="link5"  class="btn-square">トリプルドラフト風デッキ</a>
+      
+      <h1>1コス5枚デッキ</h1>
 
-    <h1>筆者が使っているデッキ</h1>
-    <a href="https://link.clashroyale.com/deck/en?deck=28000004;26000041;26000030;26000000;26000026;28000003;27000006;28000011" class="btn-square">筆者が使っているデッキ</a>
-    <br>
-    <img src= "26000000.png" height="20%" width="20%">
-    <img src= "26000026.png" height="20%" width="20%" >
-    <img src= "26000030.png" height="20%" width="20%">
-    <img src= "26000041.png" height="20%" width="20%"><br>
-    <img src= "27000006.png" height="20%" width="20%">
-    <img src= "28000003.png" height="20%" width="20%">
-    <img src= "28000011.png" height="20%" width="20%">
-    <img src= "28000004.png" height="20%" width="20%"><br>
+      <a id="link6"  class="btn-square">1コス5枚デッキ</a>
+      <h1>指定された平均エリクサー内でデッキを生成します</h1>
+      <a>エリクサーの下限を設定してください</a>
+      <select name="sources" id="elixir_range" class="custom-select sources" placeholder="Source Type">
+        <option value=1.4 selected>1.4</option> 
+        <option value=1.5>1.5</option> 
+        <option value=1.6>1.6</option> 
+        <option value=1.7>1.7</option> 
+        <option value=1.8>1.8</option> 
+        <option value=1.9>1.9</option> 
+        <option value=2.0>2.0</option> 
+        <option value=2.1>2.1</option> 
+        <option value=2.2>2.2</option> 
+        <option value=2.3>2.3</option> 
+        <option value=2.4>2.4</option> 
+        <option value=2.5>2.5</option> 
+        <option value=2.6>2.6</option> 
+        <option value=2.7>2.7</option> 
+        <option value=2.8>2.8</option> 
+        <option value=2.9>2.9</option> 
+        <option value=3.0>3.0</option> 
+        <option value=3.1>3.1</option> 
+        <option value=3.2>3.2</option> 
+        <option value=3.3>3.3</option> 
+        <option value=3.4>3.4</option> 
+        <option value=3.5>3.5</option> 
+        <option value=3.6>3.6</option> 
+        <option value=3.7>3.7</option> 
+        <option value=3.8>3.8</option> 
+        <option value=3.9>3.9</option> 
+        <option value=4.0>4.0</option> 
+        <option value=4.1>4.1</option> 
+        <option value=4.2>4.2</option> 
+        <option value=4.3>4.3</option> 
+        <option value=4.4>4.4</option> 
+        <option value=4.5>4.5</option> 
+        <option value=4.6>4.6</option> 
+        <option value=4.7>4.7</option> 
+        <option value=4.8>4.8</option> 
+        <option value=4.9>4.9</option> 
+        <option value=5.0>5.0</option> 
+        <option value=5.1>5.1</option> 
+        <option value=5.2>5.2</option> 
+        <option value=5.3>5.3</option> 
+        <option value=5.4>5.4</option> 
+        <option value=5.5>5.5</option> 
+        <option value=5.6>5.6</option> 
+        <option value=5.7>5.7</option> 
+        <option value=5.8>5.8</option> 
+        <option value=5.9>5.9</option> 
+        <option value=6.0>6.0</option> 
+        <option value=6.1>6.1</option> 
+        <option value=6.2>6.2</option> 
+        <option value=6.3>6.3</option> 
+        <option value=6.4>6.4</option> 
+        <option value=6.5>6.5</option> 
+        <option value=6.6>6.6</option> 
+        <option value=6.7>6.7</option> 
+        <option value=6.8>6.8</option> 
+        <option value=6.9>6.9</option> 
+        <option value=7.0>7.0</option> 
+        <option value=7.1>7.1</option> 
+        <option value=7.2>7.2</option> 
+        <option value=7.3>7.3</option> 
+        <option value=7.4>7.4</option> 
+        <option value=7.5>7.5</option> 
+      </select><br>
+      <a>エリクサーの上限を設定してください</a>
+      <select name="sources" id="elixir_range2" class="custom-select sources" placeholder="Source Type">
+        <option value=1.4>1.4</option> 
+        <option value=1.5>1.5</option> 
+        <option value=1.6>1.6</option> 
+        <option value=1.7>1.7</option> 
+        <option value=1.8>1.8</option> 
+        <option value=1.9>1.9</option> 
+        <option value=2.0>2.0</option> 
+        <option value=2.1>2.1</option> 
+        <option value=2.2>2.2</option> 
+        <option value=2.3>2.3</option> 
+        <option value=2.4>2.4</option> 
+        <option value=2.5>2.5</option> 
+        <option value=2.6>2.6</option> 
+        <option value=2.7>2.7</option> 
+        <option value=2.8>2.8</option> 
+        <option value=2.9>2.9</option> 
+        <option value=3.0>3.0</option> 
+        <option value=3.1>3.1</option> 
+        <option value=3.2>3.2</option> 
+        <option value=3.3>3.3</option> 
+        <option value=3.4>3.4</option> 
+        <option value=3.5>3.5</option> 
+        <option value=3.6>3.6</option> 
+        <option value=3.7>3.7</option> 
+        <option value=3.8>3.8</option> 
+        <option value=3.9>3.9</option> 
+        <option value=4.0>4.0</option> 
+        <option value=4.1>4.1</option> 
+        <option value=4.2>4.2</option> 
+        <option value=4.3>4.3</option> 
+        <option value=4.4>4.4</option> 
+        <option value=4.5>4.5</option> 
+        <option value=4.6>4.6</option> 
+        <option value=4.7>4.7</option> 
+        <option value=4.8>4.8</option> 
+        <option value=4.9>4.9</option> 
+        <option value=5.0>5.0</option> 
+        <option value=5.1>5.1</option> 
+        <option value=5.2>5.2</option> 
+        <option value=5.3>5.3</option> 
+        <option value=5.4>5.4</option> 
+        <option value=5.5>5.5</option> 
+        <option value=5.6>5.6</option> 
+        <option value=5.7>5.7</option> 
+        <option value=5.8>5.8</option> 
+        <option value=5.9>5.9</option> 
+        <option value=6.0>6.0</option> 
+        <option value=6.1>6.1</option> 
+        <option value=6.2>6.2</option> 
+        <option value=6.3>6.3</option> 
+        <option value=6.4>6.4</option> 
+        <option value=6.5>6.5</option> 
+        <option value=6.6>6.6</option> 
+        <option value=6.7>6.7</option> 
+        <option value=6.8>6.8</option> 
+        <option value=6.9>6.9</option> 
+        <option value=7.0>7.0</option> 
+        <option value=7.1>7.1</option> 
+        <option value=7.2>7.2</option> 
+        <option value=7.3>7.3</option> 
+        <option value=7.4>7.4</option> 
+        <option value=7.5 selected>7.5</option> 
+      </select><br>
+      <a id="link7"  class="btn-square">デッキはこちら</a> 
 
-    <script type="text/javascript" src="index1.js"></script>
-    <script type="text/javascript" src="index2.js"></script>
-    <script type="text/javascript" src="index3.js"></script><br>
-    <script type="text/javascript" src="index4.js"></script>
-    <script type="text/javascript" src="index5.js"></script>
-    <script type="text/javascript" src="index6.js"></script>
-    <script type="text/javascript" src="index7.js"></script>
-    </body>
+      <h1>筆者が使っているデッキ</h1>
+      <a href="https://link.clashroyale.com/deck/en?deck=28000004;26000041;26000030;26000000;26000026;28000003;27000006;28000011" class="btn-square">筆者が使っているデッキ</a>
+      <br>
+      <img src= "26000000.png" height="20%" width="20%">
+      <img src= "26000026.png" height="20%" width="20%" >
+      <img src= "26000030.png" height="20%" width="20%">
+      <img src= "26000041.png" height="20%" width="20%"><br>
+      <img src= "27000006.png" height="20%" width="20%">
+      <img src= "28000003.png" height="20%" width="20%">
+      <img src= "28000011.png" height="20%" width="20%">
+      <img src= "28000004.png" height="20%" width="20%"><br>
+
+      <script type="text/javascript" src="index1.js"></script>
+      <script type="text/javascript" src="index2.js"></script>
+      <script type="text/javascript" src="index3.js"></script><br>
+      <script type="text/javascript" src="index4.js"></script>
+      <script type="text/javascript" src="index5.js"></script>
+      <script type="text/javascript" src="index6.js"></script>
+      <script type="text/javascript" src="index7.js"></script>
+    </div>
+    </div>
+    <div id="footer-fixed">
+      <div id="footer-bk">
+        <center>
+          <div class="btn-group" role="group" aria-label="Basic radio toggle button group">
+            <input type="radio" class="btn-check" name="btnradio" id="btnradio1" autocomplete="off" checked>
+            <label class="btn btn-outline-primary" for="btnradio1">ランダムDeck</label>
+          
+            <input type="radio"  onclick="location.href='index2.html'" class="btn-check" name="btnradio" id="btnradio2" autocomplete="off">
+            <label class="btn btn-outline-primary" for="btnradio2">デッキ生成</label>
+          </div>
+        </center>
+      </div>
+    </div>
+  </div>
+  </body>
 </html>
