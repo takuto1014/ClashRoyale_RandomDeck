@@ -8,8 +8,9 @@ html, body{
   background-image: url(background-img.jpg);
   
 }
-div#contens{
+div#contents{
   overflow: hidden;
+  padding-bottom: 100px;
 }
 /*ヘッダーの設定*/
 

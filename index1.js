@@ -26,4 +26,3 @@ card_all =[26000000,26000001,26000002,26000003,26000004,26000005,26000006,260000
 document.getElementById("link").addEventListener("click", function () {
     location.href="https://link.clashroyale.com/deck/en?deck="+card_all[randoms[0]]+";"+card_all[randoms[1]]+";"+card_all[randoms[2]]+";"+card_all[randoms[3]]+";"+card_all[randoms[4]]+";"+card_all[randoms[5]]+";"+card_all[randoms[6]]+";"+card_all[randoms[7]]
 }, false);
-                

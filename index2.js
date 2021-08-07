@@ -32,7 +32,7 @@ function intRandom(min, max){
         
         card_1 = parseInt(Math.floor(Math.random()*24))
         card_2 = randoms[0]
-        card_3 = randoms[21]
+        card_3 = randoms[20]
         card_4 = parseInt(Math.floor(Math.random()*22 ))
         card_5 = parseInt(Math.floor(Math.random()*10 ))
         card_6 = parseInt(Math.floor(Math.random()*10))

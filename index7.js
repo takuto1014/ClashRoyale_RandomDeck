@@ -14,7 +14,7 @@ document.getElementById("link7").addEventListener("click", function () {
   }else if(elixir<=elixir_2){
 
   
-    for(i=0;i<1000;i++){
+    for(i=0;i=1;i=i){
 
       /** 重複チェック用配列 */
       var randoms = [];
@@ -39,7 +39,12 @@ document.getElementById("link7").addEventListener("click", function () {
       average_elixir = (card_elixir[randoms[0]]+card_elixir[randoms[1]]+card_elixir[randoms[2]]+card_elixir[randoms[3]]+card_elixir[randoms[4]]+card_elixir[randoms[5]]+card_elixir[randoms[6]]+card_elixir[randoms[7]])/8
       if( elixir <= average_elixir  && average_elixir <= elixir_2 ){
         location.href="https://link.clashroyale.com/deck/en?deck="+card_all[randoms[0]]+";"+card_all[randoms[1]]+";"+card_all[randoms[2]]+";"+card_all[randoms[3]]+";"+card_all[randoms[4]]+";"+card_all[randoms[5]]+";"+card_all[randoms[6]]+";"+card_all[randoms[7]]
+        var i=1
       }
+      else{
+        
+      }
+
     } 
   }
 })

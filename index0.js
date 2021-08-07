@@ -1,3 +1,4 @@
+
     document.getElementById("link_button").addEventListener("click", function () {
         const textbox = document.getElementById("link")
         const value = textbox.value
@@ -10,12 +11,12 @@
         
     }, false);
 
-document.getElementById("link_button2").addEventListener("click", function () {
-    var link = localStorage.getItem('key');
-    location.href=link
+    document.getElementById("link_button2").addEventListener("click", function () {
+        var link = localStorage.getItem('key');
+        location.href=link
 
-    
-}, false);
+        
+    }, false);
 
     var link = localStorage.getItem('key');
     var result = link.split(";")
@@ -30,22 +31,22 @@ document.getElementById("link_button2").addEventListener("click", function () {
     var img_6 = result[5]+".png"
     var img_7 = result[6]+".png"
     var img_8 = result_8[0]+".png"
-let img_01 = document.getElementById("image_place1");
-img_01.src = img_1;
-let img_02 = document.getElementById("image_place2");
-img_02.src = img_2;
-let img_03 = document.getElementById("image_place3");
-img_03.src = img_3;
-let img_04 = document.getElementById("image_place4");
-img_04.src = img_4;
-let img_05 = document.getElementById("image_place5");
-img_05.src = img_5;
-let img_06 = document.getElementById("image_place6");
-img_06.src = img_6;
-let img_07 = document.getElementById("image_place7");
-img_07.src = img_7;
-let img_08 = document.getElementById("image_place8");
-img_08.src = img_8;
+    let img_01 = document.getElementById("image_place1");
+    img_01.src = img_1;
+    let img_02 = document.getElementById("image_place2");
+    img_02.src = img_2;
+    let img_03 = document.getElementById("image_place3");
+    img_03.src = img_3;
+    let img_04 = document.getElementById("image_place4");
+    img_04.src = img_4;
+    let img_05 = document.getElementById("image_place5");
+    img_05.src = img_5;
+    let img_06 = document.getElementById("image_place6");
+    img_06.src = img_6;
+    let img_07 = document.getElementById("image_place7");
+    img_07.src = img_7;
+    let img_08 = document.getElementById("image_place8");
+    img_08.src = img_8;
 
 
 
