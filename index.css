@@ -73,7 +73,8 @@ div#body{
 h1{
 color:#D42496;
 font-size: 25px;
-padding: 20px;
+padding-left: 10;
+padding: 15px;
 background-color:white;
 }
 body{
@@ -210,4 +211,5 @@ ul.over{
 .over img:hover{
   opacity: 0.5;
 }
+
 
