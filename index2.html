@@ -1,45 +1,43 @@
 <!DOCTYPE html>
 <html>
-  <head>  
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1, maximum-scale=1">
-    <title>ClashRoyale Deck</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
-    <link rel="stylesheet" href="index.css">
-  </head>
-  <body>
-    <div id="contents">
-      <input type="text" id="link" class="form-control" placeholder="リンクを入力してください" />
-      <a id="link_button"  class="btn-square" >デッキを追加</a>
-      <a id="link_button2"  class="btn-square" >デッキを開く </a><br>
-      <img id="image_place1" height="10%" width="10%">
-      <img id="image_place2" height="10%" width="10%">
-      <img id="image_place3" height="10%" width="10%">
-      <img id="image_place4" height="10%" width="10%">
-      <img id="image_place5" height="10%" width="10%">
-      <img id="image_place6" height="10%" width="10%">
-      <img id="image_place7" height="10%" width="10%">
-      <img id="image_place8" height="10%" width="10%">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1, maximum-scale=1">
+  <title>ClashRoyale Deck</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+  <link rel="stylesheet" href="index.css"> </head>
+<body>
+  <div id="contents">
+    <input type="text" id="link" class="form-control" placeholder="リンクを入力してください" />
+    <center>
+      <a id="link_button" class="btn-square">デッキを追加</a>
+      <a id="link_button2" class="btn-square">デッキを開く </a><br>
+        <img id="image_place1" height="10%" width="10%"> 
+        <img id="image_place2" height="10%" width="10%"> 
+        <img id="image_place3" height="10%" width="10%"> 
+        <img id="image_place4" height="10%" width="10%"> 
+        <img id="image_place5" height="10%" width="10%"> 
+        <img id="image_place6" height="10%" width="10%"> 
+        <img id="image_place7" height="10%" width="10%"> 
+        <img id="image_place8" height="10%" width="10%">
+    </center>  
     <div id="footer-fixed">
       <div id="footer-bk">
-        <div id="footer">
-          <div class="container">
-            <div class="row">
-                <center>
-                    <div class="btn-group" role="group" aria-label="Basic radio toggle button group">
-                      <input type="radio" onclick="location.href='index.html'"  class="btn-check" name="btnradio" id="btnradio1" autocomplete="off">
-                      <label class="btn btn-outline-primary" for="btnradio1">ランダムDeck</label>
-                    
-                      <input type="radio" class="btn-check" name="btnradio" id="btnradio2" autocomplete="off" checked>
-                      <label class="btn btn-outline-primary" for="btnradio2">デッキSave</label>
-                    </div>
-                </center>
-            </div>
-        </div>
+        <center>
+          <div class="btn-group" role="group" aria-label="Basic radio toggle button group">
+            <input type="radio" onclick="location.href='index.html'" class="btn-check" name="btnradio" id="btnradio1" autocomplete="off">
+            <label class="btn btn-outline-primary" for="btnradio1">ランダムDeck</label>
+          
+            <input type="radio" class="btn-check" name="btnradio" id="btnradio2" autocomplete="off" checked>
+            <label class="btn btn-outline-primary" for="btnradio2">デッキSave</label>
+          
+            <input type="radio" onclick="location.href='index3.html'" class="btn-check" name="btnradio" id="btnradio3" autocomplete="off">
+            <label class="btn btn-outline-primary" for="btnradio3">ランダムCard</label>
+          </div>
+        </center>
       </div>
     </div>
   </div>
-  </div>
   <script type="text/javascript" src="index0.js"></script>
-  </body>
+</body>
 </html>
