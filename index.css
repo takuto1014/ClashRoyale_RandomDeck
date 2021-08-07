@@ -59,6 +59,7 @@ div#body{
   color: #FFF;
   border-bottom: solid 4px #627295;
   border-radius: 3px;
+  
 }
 .btn-square:active {
   /*ボタンを押したとき*/
@@ -70,9 +71,10 @@ div#body{
   margin-bottom: 4px;
 }
 h1{
-color: white;
+color:#D42496;
+font-size: 25px;
 padding: 20px;
-background-color:#4334EB;
+background-color:white;
 }
 body{
 background-color:white;
