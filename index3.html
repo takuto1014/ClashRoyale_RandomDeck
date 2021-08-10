@@ -10,9 +10,13 @@
   <div id="contents">
     <center>
     <h1>ランダムでカードを1枚選びます</h1>
-    
-        <p><a id="button1" class="btn-square">ランダムCard</a></p>
+        
+        <p><a id="button1" class="btn-square" onClick="sound()">ランダムCard</a></p>
         <img id="image_place" height="80%" width="40%">
+        <audio id="sound-file" preload="auto">
+          <source src="jaja-n.mp3" type="audio/mp3">
+          <source src="jaja-n.wav" type="audio/wav">
+        </audio>
     </center>
     <div id="footer-fixed">
         <div id="footer-bk">

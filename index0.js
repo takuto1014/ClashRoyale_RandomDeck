@@ -56,3 +56,38 @@
         let img_08 = document.getElementById("image_place"+i+"-8");
         img_08.src = img_8;
     }
+
+
+
+
+
+    for(i=0;i<links1.length;i++){
+        link1 = links1[i]
+        link_split = link1.split(";")
+        link_split2 = link_split[0].split("=")
+        card1 = link_split2[1]+".png";
+        card2 = link_split[1]+".png";
+        card3 = link_split[2]+".png";
+        card4 = link_split[3]+".png";
+        card5 = link_split[4]+".png";
+        card6 = link_split[5]+".png";
+        card7 = link_split[6]+".png";
+        card8 = link_split[7]+".png";
+    
+        let img_1 = document.getElementById("image_place1-"+i+"-1");
+        img_1.src = card1;
+        let img_2 = document.getElementById("image_place1-"+i+"-2");
+        img_2.src = card2;
+        let img_3 = document.getElementById("image_place1-"+i+"-3");
+        img_3.src = card3;
+        let img_4 = document.getElementById("image_place1-"+i+"-4");
+        img_4.src = card4;
+        let img_5 = document.getElementById("image_place1-"+i+"-5");
+        img_5.src = card5;
+        let img_6 = document.getElementById("image_place1-"+i+"-6");
+        img_6.src = card6;
+        let img_7 = document.getElementById("image_place1-"+i+"-7");
+        img_7.src = card7;
+        let img_8 = document.getElementById("image_place1-"+i+"-8");
+        img_8.src = card8;
+    }    
