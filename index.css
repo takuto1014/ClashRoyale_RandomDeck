@@ -12,6 +12,13 @@ div#contents{
   overflow: hidden;
   padding-bottom: 100px;
 }
+.box{
+  background-image:url(background-img.png) ;
+  border-radius:10px;
+  padding-top: 10px;
+  border-top: 20px;
+  margin: 10px 10px;
+}
 /*ヘッダーの設定*/
 
 /*
@@ -55,7 +62,7 @@ div#body{
   padding: 20px;
   margin: 20px 0;
   text-decoration: none;
-  background:#D42496  ;/*ボタン色*/
+  background:#20A4F4;/*ボタン色*/
   color: #FFF;
   border-bottom: solid 4px #627295;
   border-radius: 3px;
@@ -71,7 +78,7 @@ div#body{
   margin-bottom: 4px;
 }
 h1{
-color:#D42496;
+color:#20a4f4;
 font-size: 25px;
 padding-left: 10;
 padding: 15px;
@@ -212,4 +219,8 @@ ul.over{
   opacity: 0.5;
 }
 
-
+.ranking{
+  color: white;
+  background:#20A4F4;
+  padding: 10px;
+}
