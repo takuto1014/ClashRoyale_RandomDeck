@@ -33,8 +33,8 @@ document.getElementById("link").addEventListener("click", function () {
 document.getElementById("share").addEventListener("click", function () {
   navigator.share({
     title: document.title,
-    text: 'Hello World',
-    url: 'https://mewebsite.com',
+    text: デッキのリンクです,
+    url: 'https://link.clashroyale.com/deck/en?deck=28000004;26000030;26000026;28000003;26000010;27000006;28000011;26000011',
 })
 .then(() => {
     console.log('Share completed successfuly')
