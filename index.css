@@ -17,7 +17,11 @@ div#contents{
   border-radius:7px;
   padding-top: 10px;
   border-top: 20px;
-  margin: 10px 10px;
+  margin: 10px;
+  
+}
+.icon-img{
+  margin: 15px 0;
 }
 /*ヘッダーの設定*/
 
@@ -74,6 +78,24 @@ div#body{
   transform: translateY(4px);/*下に動く*/
   border-bottom: none;/*線を消す*/
 }
+.btn-square2 {
+  display: inline-block;
+  padding: 5px;
+  margin: 2px;
+  text-decoration: none;
+  background:#20A4F4;/*ボタン色*/
+  color: #FFF;
+  border-bottom: solid 4px #627295;
+  border-radius: 3px;
+  
+}
+.btn-square2:active {
+  /*ボタンを押したとき*/
+  -webkit-transform: translateY(4px);
+  transform: translateY(4px);/*下に動く*/
+  border-bottom: none;/*線を消す*/
+}
+
 #btn1 {
   margin-bottom: 4px;
 }
