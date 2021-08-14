@@ -246,3 +246,10 @@ ul.over{
   background:#20A4F4;
   padding: 10px;
 }
+table {
+  background-color:white;  /* 背景色指定 */
+}
+
+th {
+  background-color: #20A4F4;  /* 背景色指定 */
+}
