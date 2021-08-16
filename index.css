@@ -102,17 +102,9 @@ div#body{
 h1{
 color:#20a4f4;
 font-size: 25px;
-
+padding-left: 10;
 padding: 15px;
 background-color:white;
-}
-.text{
-  color:#20a4f4;
-  font-size: 20px;
-  padding-left: 10;
-  padding: 15px;
-  background-color:white;
-  
 }
 body{
 background-color:white;

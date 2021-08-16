@@ -94,9 +94,10 @@ document.getElementById("link").addEventListener("click", function(){
 
     //-----------------------------------------------------------------------
     //エラーの設定
-    if(elixir_1<elixir_2 || elixir_3<elixir_4){
+    if(elixir_1>elixir_2){
         alert("入力した値が間違っています")
     }else{
-        location.href="https://royaleapi.com/decks/popular?time="+term+"&sort="+sort+"&size="+size+"&players="+players+"&min_trophies=0&max_trophies=10000&min_elixir="+elixir_1+"&max_elixir="+elixir_2+"&min_cycle_elixir="+elixir_3+"&max_cycle_elixir="+elixir_4+"&mode=digest&type="+type+"&global_exclude=false"
+    location.reload();
+    location.href="https://royaleapi.com/decks/popular?time="+term+"&sort="+sort+"&size="+size+"&players="+players+"&min_trophies=0&max_trophies=10000&min_elixir="+elixir_1+"&max_elixir="+elixir_2+"&min_cycle_elixir="+elixir_3+"&max_cycle_elixir="+elixir_4+"&mode=digest&type="+type+"&global_exclude=false"
     }
 }, false);
