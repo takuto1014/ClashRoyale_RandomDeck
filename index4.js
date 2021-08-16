@@ -1,8 +1,4 @@
       //主軸選択デッキ
-      
-      
-      
-    
     document.getElementById("link4").addEventListener("click", function () {
       card_spell1   = [28000000,28000003,28000005,28000006,28000007,28000009,28000013,28000014]
       card_spell2   = [28000001,28000002,28000008,28000011,28000012,28000015,28000017,28000018]
@@ -21,6 +17,6 @@
       card7 = Math.floor(parseInt(Math.random()*card_area.length))
       text = document.getElementById("maincard")
       value = text.value
-      location.reload()
+      location.reload();
       location.href="https://link.clashroyale.com/deck/en?deck="+card_main[value]+";"+card_spell1[card1]+";"+card_spell2[card2]+";"+card_facility[card3]+";"+card_air1[card4]+";"+card_air2[card5]+";"+card_tank[card6]+";"+card_area[card7]
     }, false);

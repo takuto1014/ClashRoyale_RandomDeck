@@ -25,21 +25,25 @@ card_tank = [26000000,26000016,26000032,26000038,26000053,26000061,26000068,2600
         random = parseInt(Math.floor(Math.random()*4+1))
         if(random==1){
             document.getElementById("link5").addEventListener("click", function () {
+                location.reload();
                 location.href="https://link.clashroyale.com/deck/en?deck="+card_main[card_1]+";"+card_sky1[card_2]+";"+card_sky2[card_3]+";"+card_spell_1[card_4]+";"+card_spell_2[card_5]+";"+card_distraction[card_6]+";"+card_support_tank[card_7]+";"+card_anti_tank[card_8]
             }, false);
         }
         else if(random==2){
             document.getElementById("link5").addEventListener("click", function () {
+                location.reload();
                 location.href="https://link.clashroyale.com/deck/en?deck="+card_main[card_1]+";"+card_sky1[card_2]+";"+card_sky2[card_3]+";"+card_spell_1[card_4]+";"+card_spell_2[card_5]+";"+card_distraction[card_6]+";"+card_support_tank[card_7]+";"+card_tank[card_9]
             }, false);
         }
         else if(random==3){
             document.getElementById("link5").addEventListener("click", function () {
+                location.reload();
                 location.href="https://link.clashroyale.com/deck/en?deck="+card_main[card_1]+";"+card_sky1[card_2]+";"+card_sky2[card_3]+";"+card_spell_1[card_4]+";"+card_spell_2[card_5]+";"+card_distraction[card_6]+";"+card_anti_tank[card_8]+";"+card_tank[card_9]
             }, false);
         }
         else{
             document.getElementById("link5").addEventListener("click", function () {
+                location.reload();
                 location.href="https://link.clashroyale.com/deck/en?deck="+card_main[card_1]+";"+card_sky1[card_2]+";"+card_sky2[card_3]+";"+card_spell_1[card_4]+";"+card_spell_2[card_5]+";"+card_support_tank[card_7]+";"+card_anti_tank[card_8]+";"+card_tank[card_9]
             }, false);
         }

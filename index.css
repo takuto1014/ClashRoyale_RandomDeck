@@ -102,9 +102,17 @@ div#body{
 h1{
 color:#20a4f4;
 font-size: 25px;
-padding-left: 10;
+
 padding: 15px;
 background-color:white;
+}
+.text{
+  color:#20a4f4;
+  font-size: 20px;
+  padding-left: 10;
+  padding: 15px;
+  background-color:white;
+  
 }
 body{
 background-color:white;
@@ -245,6 +253,8 @@ ul.over{
   color: white;
   background:#20A4F4;
   padding: 10px;
+  
+  
 }
 table {
   background-color:white;  /* 背景色指定 */

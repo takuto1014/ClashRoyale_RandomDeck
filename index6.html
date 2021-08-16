@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1, maximum-scale=1">
+  <title>ClashRoyale Deck</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+  <link rel="stylesheet" href="index.css">
+</head>
+<body>
+    <div id="contents">
+    <center>
+        <h1>デッキを検索します(クラロワAPIを用います)</h1>
+        <p class="text">絞り込み期間</p>
+        <input type="radio" name="time" value="1d" checked>1日
+        <input type="radio" name="time" value="3d">3日
+        <input type="radio" name="time" value="7d">7日
+        <input type="radio" name="time" value="14d">14日
+        <p class="text">表示順</p>
+        <input type="radio" name="sort" value="rating" checked>評価
+        <input type="radio" name="sort" value="pop">人気順
+        <input type="radio" name="sort" value="win">勝率(%)
+        <p class="text">検索結果数</p>
+        <input type="radio" name="size" value="10" checked>10
+        <input type="radio" name="size" value="20">20
+        <input type="radio" name="size" value="30">30
+        <p class="text">プレイヤー</p>
+        <input type="radio" name="players" value="PvP" checked>1v1
+        <input type="radio" name="players" value="TvT">2v2
+        <p class="text">バトルタイプ</p>
+        <input type="radio" name="type" value="All" checked>All Battle
+        <input type="radio" name="type" value="NormalBattle">マルチ
+        <input type="radio" name="type" value="TopLadder">Top 1000 Ladder
+        <input type="radio" name="type" value="CC">クラシックチャレンジ
+        <input type="radio" name="type" value="GC">グランドチャレンジ
+        <p class="text">平均エリクサー</p>
+        <a>エリクサーの下限を設定してください</a> 
+        <select name="sources" id="elixir_range" class="custom-select sources" placeholder="Source Type">
+            <option value=1.4 selected>1.4</option> 
+            <option value=1.5>1.5</option> 
+            <option value=1.6>1.6</option> 
+            <option value=1.7>1.7</option> 
+            <option value=1.8>1.8</option> 
+            <option value=1.9>1.9</option> 
+            <option value=2.0>2.0</option> 
+            <option value=2.1>2.1</option> 
+            <option value=2.2>2.2</option> 
+            <option value=2.3>2.3</option> 
+            <option value=2.4>2.4</option> 
+            <option value=2.5>2.5</option> 
+            <option value=2.6>2.6</option> 
+            <option value=2.7>2.7</option> 
+            <option value=2.8>2.8</option> 
+            <option value=2.9>2.9</option> 
+            <option value=3.0>3.0</option> 
+            <option value=3.1>3.1</option> 
+            <option value=3.2>3.2</option> 
+            <option value=3.3>3.3</option> 
+            <option value=3.4>3.4</option> 
+            <option value=3.5>3.5</option> 
+            <option value=3.6>3.6</option> 
+            <option value=3.7>3.7</option> 
+            <option value=3.8>3.8</option> 
+            <option value=3.9>3.9</option> 
+            <option value=4.0>4.0</option> 
+            <option value=4.1>4.1</option> 
+            <option value=4.2>4.2</option> 
+            <option value=4.3>4.3</option> 
+            <option value=4.4>4.4</option> 
+            <option value=4.5>4.5</option> 
+            <option value=4.6>4.6</option> 
+            <option value=4.7>4.7</option> 
+            <option value=4.8>4.8</option> 
+            <option value=4.9>4.9</option> 
+            <option value=5.0>5.0</option> 
+            <option value=5.1>5.1</option> 
+            <option value=5.2>5.2</option> 
+            <option value=5.3>5.3</option> 
+            <option value=5.4>5.4</option> 
+            <option value=5.5>5.5</option> 
+            <option value=5.6>5.6</option> 
+            <option value=5.7>5.7</option> 
+            <option value=5.8>5.8</option> 
+            <option value=5.9>5.9</option> 
+            <option value=6.0>6.0</option> 
+            <option value=6.1>6.1</option> 
+            <option value=6.2>6.2</option> 
+            <option value=6.3>6.3</option> 
+            <option value=6.4>6.4</option> 
+            <option value=6.5>6.5</option> 
+            <option value=6.6>6.6</option> 
+            <option value=6.7>6.7</option> 
+            <option value=6.8>6.8</option> 
+            <option value=6.9>6.9</option> 
+            <option value=7.0>7.0</option> 
+            <option value=7.1>7.1</option> 
+            <option value=7.2>7.2</option> 
+            <option value=7.3>7.3</option> 
+            <option value=7.4>7.4</option> 
+            <option value=7.5>7.5</option> 
+        </select><br>
+        <a>エリクサーの上限を設定してください</a>
+        <select name="sources" id="elixir_range2" class="custom-select sources" placeholder="Source Type">
+            <option value=1.4>1.4</option> 
+            <option value=1.5>1.5</option> 
+            <option value=1.6>1.6</option> 
+            <option value=1.7>1.7</option> 
+            <option value=1.8>1.8</option> 
+            <option value=1.9>1.9</option> 
+            <option value=2.0>2.0</option> 
+            <option value=2.1>2.1</option> 
+            <option value=2.2>2.2</option> 
+            <option value=2.3>2.3</option> 
+            <option value=2.4>2.4</option> 
+            <option value=2.5>2.5</option> 
+            <option value=2.6>2.6</option> 
+            <option value=2.7>2.7</option> 
+            <option value=2.8>2.8</option> 
+            <option value=2.9>2.9</option> 
+            <option value=3.0>3.0</option> 
+            <option value=3.1>3.1</option> 
+            <option value=3.2>3.2</option> 
+            <option value=3.3>3.3</option> 
+            <option value=3.4>3.4</option> 
+            <option value=3.5>3.5</option> 
+            <option value=3.6>3.6</option> 
+            <option value=3.7>3.7</option> 
+            <option value=3.8>3.8</option> 
+            <option value=3.9>3.9</option> 
+            <option value=4.0>4.0</option> 
+            <option value=4.1>4.1</option> 
+            <option value=4.2>4.2</option> 
+            <option value=4.3>4.3</option> 
+            <option value=4.4>4.4</option> 
+            <option value=4.5>4.5</option> 
+            <option value=4.6>4.6</option> 
+            <option value=4.7>4.7</option> 
+            <option value=4.8>4.8</option> 
+            <option value=4.9>4.9</option> 
+            <option value=5.0>5.0</option> 
+            <option value=5.1>5.1</option> 
+            <option value=5.2>5.2</option> 
+            <option value=5.3>5.3</option> 
+            <option value=5.4>5.4</option> 
+            <option value=5.5>5.5</option> 
+            <option value=5.6>5.6</option> 
+            <option value=5.7>5.7</option> 
+            <option value=5.8>5.8</option> 
+            <option value=5.9>5.9</option> 
+            <option value=6.0>6.0</option> 
+            <option value=6.1>6.1</option> 
+            <option value=6.2>6.2</option> 
+            <option value=6.3>6.3</option> 
+            <option value=6.4>6.4</option> 
+            <option value=6.5>6.5</option> 
+            <option value=6.6>6.6</option> 
+            <option value=6.7>6.7</option> 
+            <option value=6.8>6.8</option> 
+            <option value=6.9>6.9</option> 
+            <option value=7.0>7.0</option> 
+            <option value=7.1>7.1</option> 
+            <option value=7.2>7.2</option> 
+            <option value=7.3>7.3</option> 
+            <option value=7.4>7.4</option> 
+            <option value=7.5 selected>7.5</option> 
+        </select>
+        <p class="text">4枚サイクル</p>
+        <a>4枚サイクルの下限を設定してください</a> 
+        <select name="sources" id="elixir_cycle" class="custom-select sources" placeholder="Source Type">
+            <option value=4 selected>4</option>
+            <option value=5>5</option>
+            <option value=6>6</option>
+            <option value=7>7</option>
+            <option value=8>8</option>
+            <option value=9>9</option>
+            <option value=10>10</option>
+            <option value=11>11</option>
+            <option value=12>12</option>
+            <option value=13>13</option>
+            <option value=14>14</option>
+            <option value=15>15</option>
+            <option value=16>16</option>
+            <option value=17>17</option>
+            <option value=18>18</option>
+            <option value=19>19</option>
+            <option value=20>20</option>
+            <option value=21>21</option>
+            <option value=22>22</option>
+            <option value=23>23</option>
+            <option value=24>24</option>
+            <option value=25>25</option>
+            <option value=26>26</option>
+            <option value=27>27</option>
+            <option value=28>28</option>
+        </select><br>
+        <a>4枚サイクルの上限を設定してください</a> 
+        <select name="sources" id="elixir_cycle2" class="custom-select sources" placeholder="Source Type">
+            <option value=4>4</option>
+            <option value=5>5</option>
+            <option value=6>6</option>
+            <option value=7>7</option>
+            <option value=8>8</option>
+            <option value=9>9</option>
+            <option value=10>10</option>
+            <option value=11>11</option>
+            <option value=12>12</option>
+            <option value=13>13</option>
+            <option value=14>14</option>
+            <option value=15>15</option>
+            <option value=16>16</option>
+            <option value=17>17</option>
+            <option value=18>18</option>
+            <option value=19>19</option>
+            <option value=20>20</option>
+            <option value=21>21</option>
+            <option value=22>22</option>
+            <option value=23>23</option>
+            <option value=24>24</option>
+            <option value=25>25</option>
+            <option value=26>26</option>
+            <option value=27>27</option>
+            <option value=28 selected>28</option>
+        </select>
+        <br>
+        <a class="btn-square" id="link">絞り込み</a>
+    </center>
+        </div>
+    </div>    
+<div id="footer-fixed">
+    <div id="footer-bk">
+        <center>
+            <div class="btn-group" role="group" aria-label="Basic radio toggle button group">
+                <input type="radio" onclick="location.href='index.html'" class="btn-check" name="btnradio" id="btnradio1" autocomplete="off">
+                <label class="btn btn-outline-primary" for="btnradio1">Deck</label>
+
+                <input type="radio" onclick="location.href='index2.html'" class="btn-check" name="btnradio" id="btnradio2" autocomplete="off">
+                <label class="btn btn-outline-primary" for="btnradio2">Save</label>
+
+                <input type="radio" onclick="location.href='index3.html'" class="btn-check" name="btnradio" id="btnradio3" autocomplete="off">
+                <label class="btn btn-outline-primary" for="btnradio3">Card</label>
+
+                <input type="radio" onclick="location.href='index4.html'" class="btn-check" name="btnradio" id="btnradio4" autocomplete="off">
+                <label class="btn btn-outline-primary" for="btnradio4">Challenge</label>
+
+                <input type="radio" class="btn-check" name="btnradio" id="btnradio5" autocomplete="off" checked>
+                <label class="btn btn-outline-primary" for="btnradio5">Search</label>
+            </div>
+        </center>
+    </div>
+</div>
+<script type="text/javascript" src="index10.js"></script>
+</body>
+</html> 

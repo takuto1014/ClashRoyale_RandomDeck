@@ -670,5 +670,6 @@ document.getElementById("link3").addEventListener("click", function () {
             card_6 = parseInt(Math.floor(Math.random()*number_facility))  //施設
             card_7 = parseInt(Math.floor(Math.random()*number_spell1))  //小型呪文
             card_8 = parseInt(Math.floor(Math.random()*number_spell2))  //大型呪
+            location.reload();
     location.href="https://link.clashroyale.com/deck/en?deck="+card_main[card_1]+";"+card_sky[card_2]+";"+card_sky[card_3]+";"+card_tank[card_4]+";"+card_area[card_5]+";"+card_facility[card_6]+";"+card_spell_1[card_7]+";"+card_spell_2[card_8]
 }, false);

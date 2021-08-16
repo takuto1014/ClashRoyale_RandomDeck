@@ -1,4 +1,3 @@
-
 //『デッキを追加』ボタンの挙動
 document.getElementById("link_button").addEventListener("click", function () {
     const textbox = document.getElementById("link")

@@ -8,6 +8,7 @@ card_1 = parseInt(Math.floor(Math.random()*card_main.length))
 card_2 = parseInt(Math.floor(Math.random()*card_air.length))
 card_3 = parseInt(Math.floor(Math.random()*card_spell.length))
 document.getElementById("link6").addEventListener("click", function () {
+    location.reload();
     location.href="https://link.clashroyale.com/deck/en?deck=26000010;26000030;26000031;26000084;28000016;"+card_main[card_1]+";"+card_air[card_2]+";"+card_spell[card_3]
 }, false);
 
