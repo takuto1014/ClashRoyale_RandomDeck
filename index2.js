@@ -42,7 +42,7 @@ function intRandom(min, max){
         card_6 = parseInt(Math.floor(Math.random()*10))
         card_7 = parseInt(Math.floor(Math.random()*8 ))
         card_8 = parseInt(Math.floor(Math.random()*8))
-  location.reload();
+  
   location.href="https://link.clashroyale.com/deck/en?deck="+card_main[card_1]+";"+card_sky[card_2]+";"+card_sky[card_3]+";"+card_tank[card_4]+";"+card_area[card_5]+";"+card_facilities[card_6]+";"+card_spell_small[card_7]+";"+card_spell_big[card_8]
 }, false);
         

@@ -19,6 +19,6 @@
       card6 = Math.floor(parseInt(Math.random()*card_tank.length))
       card7 = Math.floor(parseInt(Math.random()*card_area.length))
       
-      location.reload();
+      
       location.href="https://link.clashroyale.com/deck/en?deck="+card_main[value]+";"+card_spell1[card1]+";"+card_spell2[card2]+";"+card_facility[card3]+";"+card_air1[card4]+";"+card_air2[card5]+";"+card_tank[card6]+";"+card_area[card7]
     }, false);
