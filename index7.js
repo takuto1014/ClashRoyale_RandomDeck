@@ -13,8 +13,8 @@ document.getElementById("link7").addEventListener("click", function () {
     alert("入力した値が間違っています")
   }else if(elixir<=elixir_2){
 
-  
-    for(i=0;i=1;i=i){
+    a=0
+    while(a<=1){
 
       /** 重複チェック用配列 */
       var randoms = [];
@@ -39,12 +39,14 @@ document.getElementById("link7").addEventListener("click", function () {
       average_elixir = (card_elixir[randoms[0]]+card_elixir[randoms[1]]+card_elixir[randoms[2]]+card_elixir[randoms[3]]+card_elixir[randoms[4]]+card_elixir[randoms[5]]+card_elixir[randoms[6]]+card_elixir[randoms[7]])/8
       if( elixir <= average_elixir  && average_elixir <= elixir_2 ){
         location.href="https://link.clashroyale.com/deck/en?deck="+card_all[randoms[0]]+";"+card_all[randoms[1]]+";"+card_all[randoms[2]]+";"+card_all[randoms[3]]+";"+card_all[randoms[4]]+";"+card_all[randoms[5]]+";"+card_all[randoms[6]]+";"+card_all[randoms[7]]
-        var i=1
+        a=10
+      }else{
+        console.log("失敗"+a) 
       }
-      else{
-        
-      }
-
-    } 
+      
+    }
+    /*if(a==10001){
+      alert("もう一度実行してください")
+    } */
   }
 })
