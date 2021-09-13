@@ -30,3 +30,54 @@ document.getElementById("link").addEventListener("click", function () {
 
 
 
+
+
+//-----------------------------------------------------------------------------------------------------------------------
+//-----------------------------------------------------------------------------------------------------------------------
+//-----------------------------------------------------------------------------------------------------------------------
+//-----------------------------------------------------------------------------------------------------------------------
+//-----------------------------------------------------------------------------------------------------------------------
+//-----------------------------------------------------------------------------------------------------------------------
+//筆者が使っているデッキ
+
+Link = "https://link.clashroyale.com/deck/en?deck=26000085;26000055;26000033;26000043;26000018;26000017;28000001;26000047"
+document.getElementById("link8").addEventListener("click", function () {
+  location.href=Link
+}, false);
+var Link_Number = Link.split(";")
+var asdfjkl1 = Link_Number[0].split("=")
+Link_Number.shift();
+Link_Number.unshift(asdfjkl1[1])
+var asdfjkl2 = Link_Number[7].split("&")
+Link_Number.pop();
+Link_Number.push(asdfjkl2[0])   
+
+    card1 = Link_Number [0]+".png";
+    card2 = Link_Number [1]+".png";
+    card3 = Link_Number [2]+".png";
+    card4 = Link_Number [3]+".png";
+    card5 = Link_Number [4]+".png";
+    card6 = Link_Number [5]+".png";
+    card7 = Link_Number [6]+".png";
+    card8 = Link_Number [7]+".png";
+
+
+let img_1 = document.getElementById("image_place1-1");
+img_1.src = card1;
+let img_2 = document.getElementById("image_place1-2");
+img_2.src = card2;
+let img_3 = document.getElementById("image_place1-3");
+img_3.src = card3;
+let img_4 = document.getElementById("image_place1-4");
+img_4.src = card4;
+let img_5 = document.getElementById("image_place1-5");
+img_5.src = card5;
+let img_6 = document.getElementById("image_place1-6");
+img_6.src = card6;
+let img_7 = document.getElementById("image_place1-7");
+img_7.src = card7;
+let img_8 = document.getElementById("image_place1-8");
+img_8.src = card8;
+
+
+

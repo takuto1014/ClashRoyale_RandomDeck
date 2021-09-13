@@ -9,6 +9,7 @@ document.getElementById("link_button").addEventListener("click", function () {
         location.reload();
     }else{
         alert("入力したリンクが間違っています")
+        location.reload();
     }
     
 }, false);
