@@ -156,6 +156,9 @@ function button(b){
             img_016.src = img_16+".png";
             let img_017 = document.getElementById("image_place17");
             img_017.src = img_17+".png";
+
+            const element = document.getElementById('text'); 
+            element.remove();
         }
     }, false);
     document.getElementById("button_1").addEventListener("click", function () {
@@ -212,6 +215,9 @@ function button(b){
                 img_016.src = img_16+".png";
                 let img_017 = document.getElementById("image_place17");
                 img_017.src = img_17+".png";
+
+                const element = document.getElementById('text'); 
+                element.remove();
             }
     }, false); 
     document.getElementById("button_2").addEventListener("click", function () {
@@ -268,6 +274,9 @@ function button(b){
                 img_016.src = img_16+".png";
                 let img_017 = document.getElementById("image_place17");
                 img_017.src = img_17+".png";
+
+                const element = document.getElementById('text'); 
+                element.remove();
             }
     }, false); 
 }
